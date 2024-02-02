@@ -1,0 +1,123 @@
+/* font-family: 'Kanit', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+/* font-family: 'Inconsolata', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* font-family: 'Bungee Spice', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+img {
+    user-select: none;
+}
+
+#pantallaInicial {
+    background-image: url('../img/velocidadluz.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pantallaJugador {
+    background-image: url('../img/mustafarduel.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pantallaFinal {
+    background: radial-gradient(circle, rgb(69, 69, 69), #888888);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 7.5vh;
+}
+
+#pantallaJugador img {
+    height: 450px;
+    margin: 2vh;
+    border: 2px solid #fff536;
+}
+
+#campoJuego {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#jugada {
+    margin: 2vh;
+}
+
+/* BOTONES */
+button {
+    font-family: 'Inconsolata', monospace;
+    padding: 10px 20px;
+    background-color: #fff536;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #67ff49;
+}
+
+button:active {
+    background-color: #4cb338;
+}
+
+.boton-importante {
+    font-family: 'Kanit', sans-serif;
+    padding: 10px 20px;
+    background-color: #00aaf8;
+    color: rgb(246, 246, 246);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-importante:hover {
+    background-color: #c021ff;
+}
+
+.boton-importante:active {
+    background-color: #7f18a7;
+}
+
+#resultado {
+    background-color: #000000;
+    height: 70%;
+    width: 30%;
+    border-radius: 25px;
+    filter: opacity(65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

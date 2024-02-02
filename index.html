@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piedra, papel, tijeras... ¿sable de luz?</title>
+        <link rel="stylesheet" href="practica1.css">
+    </head>
+    <body>
+        <div id="pantallaInicial">
+            <img src="../img/logosw.png">
+            <button class="boton-importante" id="botonIniciar">Enfrentar el lado oscuro</button>
+        </div>
+        <div id="pantallaJugador">
+            <h1 id="marcador">0 - 0</h1>
+            <div id="campoJuego">
+                <img src="../img/anakin.jpg" id="manoJugador">
+                <img src="../img/vader.jpg" id="manoAdversario">
+            </div>
+            <div id="jugada">
+                <button class="jugadas" id="forma1">Shii-Cho</button>
+                <button class="jugadas" id="forma2">Makashi</button>
+                <button class="jugadas" id="forma3">Soresu</button>
+                <button class="jugadas" id="forma4">Ataru</button>
+                <button class="jugadas" id="forma5">Shien/Djem So</button>
+                <button class="jugadas" id="forma6">Niman</button>
+                <button class="jugadas" id="forma7">Juyo/Vaapad</button>
+            </div>
+            <div>
+                <button class="boton-importante" id="botonTerminar">Huir del enfrentamiento</button>
+            </div>
+        </div>
+        <div id="pantallaFinal">
+            <div id="resultado">
+                <h1 id="resultadoFinal"></h1>
+                <button class="boton-importante" id="botonVolver">Volver al Halcón de Ébano</button>
+            </div>
+        </div>
+        <audio id="duel-of-fates-audio" src="../audio/dueloffates.mp3"></audio>
+        <script src="practica1.js"></script>
+    </body>
+</html>
